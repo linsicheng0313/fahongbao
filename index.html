@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>林思成的红包规则 🧧</title>
+    <style>
+        /* 全局样式重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+        }
+
+        /* 页面背景与整体布局 */
+        body {
+            background-color: #FFF5F7;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* 卡片容器 */
+        .rule-card {
+            background-color: #FFFFFF;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(255, 182, 193, 0.3);
+            padding: 30px 20px;
+            max-width: 600px;
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        /* 标题样式 */
+        .title {
+            text-align: center;
+            color: #E63946;
+            font-size: 28px;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .title i {
+            font-size: 32px;
+        }
+
+        /* 规则列表样式 */
+        .rule-list {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+
+        .rule-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            font-size: 18px;
+            color: #333333;
+            line-height: 1.6;
+        }
+
+        /* 序号样式 */
+        .rule-num {
+            background-color: #FFC2D1;
+            color: #FFFFFF;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+            font-weight: bold;
+        }
+
+        /* 强调金额 */
+        .amount {
+            color: #E63946;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        /* 提示语样式 */
+        .tips {
+            background-color: #FFE5EC;
+            border-radius: 15px;
+            padding: 15px;
+            text-align: center;
+            font-size: 16px;
+            color: #D62828;
+            font-weight: 500;
+            border: 2px dashed #FFB3C1;
+        }
+
+        /* 装饰元素 */
+        .decor {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 40px;
+            opacity: 0.8;
+        }
+
+        /* 响应式适配 */
+        @media (max-width: 480px) {
+            .title {
+                font-size: 24px;
+            }
+            .rule-item {
+                font-size: 16px;
+            }
+            .amount {
+                font-size: 18px;
+            }
+            .rule-card {
+                padding: 20px 15px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .rule-card {
+                padding: 40px 30px;
+            }
+            .rule-item {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="rule-card">
+        <h1 class="title">🧧 发红包规则 🧧</h1>
+        <ul class="rule-list">
+            <li class="rule-item">
+                <span class="rule-num">1</span>
+                <span>在林思成朋友圈点赞一个作品 <span class="amount">0.02元</span></span>
+            </li>
+            <li class="rule-item">
+                <span class="rule-num">2</span>
+                <span>在林思成朋友圈点赞一个作品+评论自己的真实感受 <span class="amount">0.07元</span></span>
+            </li>
+            <li class="rule-item">
+                <span class="rule-num">3</span>
+                <span>过节日 <span class="amount">1~20元</span>（随机）</span>
+            </li>
+        </ul>
+        <div class="tips">💡 重要提示：请勿告知他人此活动哦！</div>
+        <div class="decor">✨🥳✨</div>
+    </div>
+</body>
+</html>
